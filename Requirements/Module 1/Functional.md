@@ -27,7 +27,7 @@ The types of administrative requests managed include absence authorization, inte
    - Production Operator (PO): the skilled workers working on production lines.
    - Team Leader (TL): leading a team in a production line (PO N+1). A team leader might lead more than one production line.
    - Shift Leader (SL)*: leading the team leaders and so several production lines. (to be confirmed it it is Hourly)
-2. **InDirect Hourly Employees (DH):**
+2. **InDirect Hourly Employees (IHE):**
    - Support Techniciens payed on hourly based
    - Maintenance payed on hourly based
 4. **Indirect Salaries (IS):** Those are full time employees at APTIV
@@ -42,20 +42,22 @@ The types of administrative requests managed include absence authorization, inte
    There are 3 types of requests to be considered:
 
    ***1. Employee Administrative Documents requested only on Kiosk:*** Those are mainly administrative documents related to emplyee evidence. Those can be requested by all employee categories. Example: Work Certificate, Wage Certificate, Salary Domiciliation,..... 
-   ***2. ***
-
+   ***2. Employee Requests:*** Those requests done by employees either from Tablets (Line Team leaders) or Desktops (Office Employees) 
+         Exp: Vacacion request, Leave request, Travel Order, Outsite request, Clocking Adjustment.... 
+   ***3. Doc Templates:*** For non Digitalised documents
    
 
 
-1. **Absence Authorization**
-   - **Description:** Request for approval of planned absences such as vacations, personal days, or medical leave.
+1. **Leave Request (Autorisation d'abscence)**
+   - **Description:** Request for approval of planned absences during a working day. It might be 1 or few hours of autorised time off that a worker can request. 
    - **Purpose:** Ensures that absences are documented and approved by the relevant team leader.
    - **Highlight:**
-      - Supervisor initiate Document Request via Inter-active Bornes with the presence of his Team Member
-      - Manager Approves the request once notified
-      - HR Manager Approves the request once notified
-      - Install an application at the “Poste de Grade” linked with the new system.
-      - A notification is sent to Guardhouse
+      - For DH: Team Leader initiate the Leave Request via Inter-active Bornes with the presence of his Team Member.
+      - For FTE they can request it directely from CW-App  
+      - Manager (N+1) Approves the request once notified.
+      - HR Manager Approves the request once notified.
+      - A Event/notification is sent to TKS.
+      - A notification is sent to Guardhouse “Poste de Grade” through email.
 
 2. **Inter-site Movement Permit**
    - **Description:** Request for permission to move between different company sites.
