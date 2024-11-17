@@ -21,20 +21,31 @@ The types of administrative requests managed include absence authorization, inte
    - **Focus:** Limits the need for employees, especially team leaders, to visit the HR office.
    - **Advantage:** Saves time and increases productivity by allowing employees to handle requests remotely.
 
-**Key Users:**
+**Key User Categories:**
 
 1. **Direct Hourly Employees (DH):**
    - Production Operator (PO): the skilled workers working on production lines.
    - Team Leader (TL): leading a team in a production line (PO N+1). A team leader might lead more than one production line.
    - Shift Leader (SL)*: leading the team leaders and so several production lines. (to be confirmed it it is Hourly)
-2. **Indirect Salaries (IS):** Those are full time employees at APTIV
-   - Production Cordinator: The shift leaders Manager. the
+2. **InDirect Hourly Employees (DH):**
+   - Support Techniciens payed on hourly based
+   - Maintenance payed on hourly based
+4. **Indirect Salaries (IS):** Those are full time employees at APTIV
+   - Production Cordinator: The shift leaders Manager. 
    - Department Manager:
    - Plant Manager: The exactuve manager of the plant/factory.
    ![image](https://github.com/user-attachments/assets/bf86088c-382a-441b-9479-2547a7f5601d)
+  - All other Aptiv FTEs like managers, HR,....
+    
+** Administrative Document Requests:**
+   
+   There are 3 types of requests to be considered:
 
+   ***1. Employee Administrative Documents requested only on Kiosk:*** Those are mainly administrative documents related to emplyee evidence. Those can be requested by all employee categories. Example: Work Certificate, Wage Certificate, Salary Domiciliation,..... 
+   ***2. ***
 
-**List of Administrative Requests Managed:**
+   
+
 
 1. **Absence Authorization**
    - **Description:** Request for approval of planned absences such as vacations, personal days, or medical leave.
