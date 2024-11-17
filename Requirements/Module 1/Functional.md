@@ -5,7 +5,7 @@ Module 1 of the Connected Worker solution focuses on streamlining and digitalizi
 
 **Key Features:**
 
-1. **Digitalization of Administrative Documents:**
+1. **Digitalization of Administrative Documents:** 
    - **Platforms:** Accessible via kiosks and mobile devices.
    - **Purpose:** To replace physical documents with digital versions, ensuring easy access and management.
 
@@ -21,19 +21,33 @@ Module 1 of the Connected Worker solution focuses on streamlining and digitalizi
 
 1. **Absence Authorization**
    - **Description:** Request for approval of planned absences such as vacations, personal days, or medical leave.
-   - **Purpose:** Ensures that absences are documented and approved by the relevant authority.
+   - **Purpose:** Ensures that absences are documented and approved by the relevant supervisor.
+   - **Highlight:**
+      - Supervisor initiate Document Request via Inter-active Bornes with the presence of his Team Member
+      - Manager Approves the request once notified
+      - HR Manager Approves the request once notified
+      - Install an application at the “Poste de Grade” linked with the new system.
+      - A notification is sent to Guardhouse
 
-2. **Inter-site Movement**
+2. **Inter-site Movement Permit**
    - **Description:** Request for permission to move between different company sites.
    - **Purpose:** Manages and tracks employee movements for security and logistical purposes.
-
+   - **Highlight:**
+      - Supervisor initiate Document Request via Inter-active Bornes with the presence of his Team Member
+      - Manager Approves the request once notified
+      - HR Manager Approves the request once notified
+      - Install an application linked with the new system of all Guardhouse.
+      - Notification be sent to the relevant Guardhouse
+      
 3. **Travel Order**
    - **Description:** Request for authorization to travel for work-related purposes.
    - **Purpose:** Ensures that travel is necessary and approved, and helps in planning and budgeting.
+   - **Highlight:**
 
 4. **Request for Outside Work**
    - **Description:** Request to perform work outside the usual workplace.
    - **Purpose:** Facilitates remote work or off-site assignments while ensuring proper authorization.
+   - **Highlight:**
 
 5. **Request for Correction of Clocking**
    - **Description:** Request to correct errors in clocking in or out times.
@@ -62,14 +76,33 @@ Module 1 of the Connected Worker solution focuses on streamlining and digitalizi
 11. **Work Certificate**
     - **Description:** Request for a certificate confirming employment status.
     - **Purpose:** Provides official proof of employment for various purposes.
+    - **Highlight:**
+       - Supervisor initiate Document Request via Inter-active Bornes
+       - Document Request should not exceed 2 Request per Month (flexible number to be introduced IN Configuration step)
+       - If More, HR Approval is Mandatory
+       - A message will appear indicating the data that will be inserted on the certificate according to the date of printing
 
-12. **Wage Attestation**
+
+12. **Wage Certificate**
     - **Description:** Request for a document attesting to an employee's wages.
     - **Purpose:** Used for financial or legal purposes, such as loan applications.
+    - **Highlight:**
+       - Supervisor initiate Document Request via Inter-active Bornes with the presence of his Team Member
+       - Document Request should not exceed 2 Request per Month
+       - If More, HR Approval is Mandatory
+       - A message will appear indicating the data that will be inserted on the certificate according to the date of printing
 
 13. **Salary Domiciliation**
     - **Description:** Request to change the bank account where salary is deposited.
     - **Purpose:** Ensures that salary payments are directed to the correct bank account.
+    - **Highlight:**
+       - Supervisor scanes Request Legalized and the RIB certificate after insert them in the Plateform
+       - HR Analyst Double Checked and Approve the Request after receiving a Notification
+       - Supervisor initiate Document Request via Inter-active Bornes after receiving approval from HR Analyst via Plateform
+       - Print Salary Domiciliation
+       - Document Request should not exceed 1 Request per Month
+       - If More, HR Approval is Mandatory
+
 
 14. **Request for Salary Domiciliation**
     - **Description:** Similar to Salary Domiciliation, this request is for setting up or changing the bank account for salary deposits.
