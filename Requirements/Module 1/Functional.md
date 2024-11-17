@@ -1,7 +1,11 @@
 ### Module 1: Administrative Request Management
 
 **Overview:**
-Module 1 of the Connected Worker solution focuses on streamlining and digitalizing administrative processes. By transitioning from paper-based to digital platforms, it aims to enhance efficiency, reduce delays, and minimize unnecessary employee movements, particularly for team leaders who frequently visit the HR office. This module supports APTIV’s vision for a digital, data-driven future by providing a centralized platform for managing various administrative requests.
+Module 1 of the Connected Worker solution at APTIV focuses on streamlining and digitalizing administrative processes. By transitioning from paper-based to digital platforms, it enhances efficiency, reduces delays, and minimizes unnecessary employee movements, particularly for team leaders who frequently visit the HR office. This module supports APTIV’s vision for a digital, data-driven future by providing a centralized platform for managing various administrative requests.
+
+The key features include the digitalization of administrative documents, which are accessible via kiosks and mobile devices, ensuring easy access and management. It also aims to avoid delays in document delivery, ensuring timely processing and reducing the waiting period for employees. Additionally, it reduces the need for employees, especially team leaders, to visit the HR office, saving time and increasing productivity by allowing employees to handle requests remotely.
+
+The types of administrative requests managed include absence authorization, inter-site movement permits, travel orders, requests for outside work, corrections of clocking errors, changes in clocking in and out times, holiday leave requests, declarations of lost badges, and requests for medical certificates. These features collectively enhance the efficiency and effectiveness of administrative processes at APTIV.
 
 **Key Features:**
 
