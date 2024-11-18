@@ -33,16 +33,30 @@
   - Declaration of Loss of Badge
   - Issue of Medical Certificate
 
-## 3. Aggregates, Entities, and Value Objects
+## 3. Core Entities, Aggregates and Value Objects
 - **Entities:**
-  - **Employee**
+
+  - **Employee:**
     - Attributes: EmployeeID, Name, Role, Category (DH, IHE, IS), etc.
-  - **Document**
+    - Relationships: Can initiate multiple types of requests.
+  
+  - **AdministrativeRequest (Aggregate Root):**
+    - Attributes: RequestID, Type, Status, CreatedDate, EmployeeID, etc.
+    - Types: LeaveRequest, MovementPermit, TravelOrder, ClockingCorrection, BadgeDeclaration, MedicalCertificate, PaySlip, WorkCertificate, WageCertificate, SalaryDomiciliation, PositionConfirmation, etc.
+    - Relationships: Contains details specific to each request type (e.g., LeaveDetails, ClockingDetails).
+  
+  - **Document:**
     - Attributes: DocumentID, Type, Status, CreatedDate, etc.
-  - **Request**
-    - Attributes: RequestID, Type, Status, CreatedDate, etc.
-  - **Notification**
+    - Relationships: Linked to AdministrativeRequests for document management.
+
+  - **Notification:**
     - Attributes: NotificationID, Type, Status, SentDate, etc.
+    - Relationships: Sent to relevant parties (e.g., Employee, Manager, HRManager).
+
+- **Relationships Between Entities and Aggregates:**
+    - Employee can initiate multiple AdministrativeRequests.
+    - AdministrativeRequest can have multiple Documents associated with it.
+    - Notification is sent to Employee, Manager, and HRManager for updates on AdministrativeRequest status.
 
 - **Value Objects:**
   - **LeaveDetails**
