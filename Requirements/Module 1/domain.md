@@ -28,10 +28,8 @@
   - Request for Correction of Clocking
   - Change of Clocking In and Out
   - Request for Leave (Holidays)
-
-- **Security and Access Control Context:**
-  - Declaration of Loss of Badge
   - Issue of Medical Certificate
+  - Declaration of Loss of Badge
 
 ## 3. Core Entities, Aggregates and Value Objects
 - **Entities:**
@@ -92,19 +90,49 @@
 - **Security API:**
   - Endpoints: CreateBadgeDeclaration, GetBadgeDeclaration, UpdateBadgeDeclaration, DeleteBadgeDeclaration
 
-## 8. Event-Driven Architecture
+## 8. Event and Commands
 - **Events:**
   - DocumentCreated
   - DocumentUpdated
   - MovementPermitCreated
   - LeaveRequestCreated
   - BadgeDeclared
+  - TravelOrderApproved
+  - SalaryDomiciliationInitiated
 - **Event Handlers:** Listens to events and triggers necessary actions (e.g., sending notifications).
+- **Commands:** CreateLeaveRequest, ApproveTravelOrder, InitiateSalaryDomiciliation, etc.
 
 ## 9. Cross-Cutting Concerns
 - **Logging:** Implement logging for tracking and debugging.
 - **Security:** Ensure secure access to APIs and data.
 - **Monitoring:** Set up monitoring for system health and performance.
+
+## 10. Use Cases for Each Feature
+
+- **Leave Request:**
+  - InitiateLeaveRequest: Employee initiates a leave request.
+  - ApproveLeaveRequest: Manager and HRManager approve the leave request.
+  - NotifyLeaveRequestStatus: Send notifications to Employee and relevant parties.
+
+- **Travel Order:**
+  - InitiateTravelOrder: Employee initiates a travel order request.
+  - ApproveTravelOrder: Manager and HRManager approve the travel order.
+  - NotifyTravelOrderStatus: Send notifications to Employee and relevant parties.
+
+- **Salary Domiciliation:**
+  - InitiateSalaryDomiciliation: Employee initiates a salary domiciliation request.
+  - ApproveSalaryDomiciliation: HR Analyst double-checks and approves the request.
+  - NotifySalaryDomiciliationStatus: Send notifications to Employee and relevant parties.
+
+- **Position Confirmation:**
+  - InitiatePositionConfirmation: Employee initiates a position confirmation request.
+  - ApprovePositionConfirmation: Manager and HRManager approve the request.
+  - NotifyPositionConfirmationStatus: Send notifications to Employee and relevant parties.
+
+- **Work & Salary Certificate (Anapec):**
+  - InitiateWorkSalaryCertificate: Employee initiates a request for a work and salary certificate.
+  - ApproveWorkSalaryCertificate: HRManager approves the request.
+  - NotifyWorkSalaryCertificateStatus: Send notifications to Employee and relevant parties.
 
 ## Example Use Case: Leave Request
 1. **Initiate Leave Request:**
