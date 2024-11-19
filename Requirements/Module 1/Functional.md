@@ -40,16 +40,18 @@ The types of administrative requests managed include absence authorization, inte
    ![image](https://github.com/user-attachments/assets/bf86088c-382a-441b-9479-2547a7f5601d)
   - All other Aptiv FTEs like managers, HR,....
     
-##Administrative Document Requests:
+## Administrative Document Requests:
    
    There are 3 types of requests to be considered:
 
-   ***1. Employee Administrative Documents requested only on Kiosk:*** Those are mainly administrative documents related to emplyee evidence. Those can be requested by all employee categories. Example: Work Certificate, Wage Certificate, Salary Domiciliation,..... 
-   ***2. Employee Requests:*** Those requests done by employees either from Tablets (Line Team leaders) or Desktops (Office Employees) 
+   ### 1. Employee Administrative Documents requested only on Kiosk:*** Those are mainly administrative documents related to emplyee evidence. Those can be requested by all employee categories. Example: Work Certificate, Wage Certificate, Salary Domiciliation,..... 
+   ### 2. Employee Requests:*** Those requests done by employees either from Tablets (Line Team leaders) or Desktops (Office Employees) 
          Exp: Vacacion request, Leave request, Travel Order, Outsite request, Clocking Adjustment.... 
-   ***3. Doc Templates:*** For non Digitalised documents
+   ### 3. Doc Templates:*** For non Digitalised documents
    
+a completer par hajar et manal avec le detail des types de documents et liste des documents
 
+## Administrative Process Descriptions:
 
 1. **Leave Request (Autorisation d'abscence)**
    - **Description:** Request for approval of planned absences during a working day. It might be 1 or few hours of autorised time off that a worker can request. 
