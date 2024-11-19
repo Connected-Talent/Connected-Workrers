@@ -27,8 +27,8 @@ The types of administrative requests managed include absence authorization, inte
    - Production Operator (PO): the skilled workers working on production lines.
    - Team Leader (TL): leading a team in a production line (PO N+1). A team leader might lead more than one production line.
 2. **InDirect Hourly Employees (IHE):**
-   - Support Techniciens payed on hourly based
-   - Maintenance payed on hourly based
+   - Support Techniciens payed on hourly based.They can be assigned to multiple tasks per demand
+   - Maintenance payed on hourly based.They can be assigned to multiple tasks per demand
 3. **Indirect Salaries (IS):** Those are full time employees at APTIV
    - Shift Leader (SL)*: leading the team leaders and so several production lines. 
    - Production Cordinator: The shift leaders Manager. 
