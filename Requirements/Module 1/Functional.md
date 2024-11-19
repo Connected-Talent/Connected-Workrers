@@ -34,12 +34,13 @@ The types of administrative requests managed include absence authorization, inte
    - Production Cordinator: The shift leaders Manager. 
    - Department Manager:
    - Plant Manager: The exactuve manager of the plant/factory.
+
 **For more details, see ListOfRoles page in the same folder (to add link)**
 
    ![image](https://github.com/user-attachments/assets/bf86088c-382a-441b-9479-2547a7f5601d)
   - All other Aptiv FTEs like managers, HR,....
     
-** Administrative Document Requests:**
+##Administrative Document Requests:
    
    There are 3 types of requests to be considered:
 
