@@ -38,6 +38,7 @@ The types of administrative requests managed include absence authorization, inte
    - Production Cordinator: The shift leaders Manager. 
    - Department Manager:
    - Plant Manager: The exactuve manager of the plant/factory.
+   - Can connect to kiosk and tablet
 
 **For more details, see ListOfRoles page in the same folder (to add link)**
 
