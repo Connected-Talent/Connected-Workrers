@@ -25,6 +25,7 @@ The types of administrative requests managed include absence authorization, inte
 
 1. **Direct Hourly Employees (DH):**
    - Production Operator (PO): the skilled workers working on production lines.
+   
    **InDirect Hourly Employees (IH):**
    - Shift Leader (SL)*: leading the team leaders and so several production lines.
    - Team Leader (TL): leading a team in a production line (PO N+1). A team leader might lead more than one production line.
