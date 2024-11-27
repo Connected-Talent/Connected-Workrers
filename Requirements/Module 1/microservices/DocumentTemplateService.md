@@ -18,8 +18,6 @@ The **DocumentTemplate Management Microservice** enables super administrators to
 - [Security Considerations](#security-considerations)
 - [Getting Started](#getting-started)
 - [Examples](#examples)
-- [Contributors](#contributors)
-- [License](#license)
 
 ---
 
@@ -349,3 +347,135 @@ Authorization: Bearer <token>
   "updatedAt": "2023-10-01T12:00:00Z"
 }
 ```
+
+
+
+
+
+----
+
+# New Endpoint: Get Template Fields and Data
+
+## Endpoint
+
+```
+GET /templates/{id}/fields or by workflow id
+```
+
+## Description
+
+Retrieves all dynamic fields for a specific template, including:
+
+- **System Fields**: Data fetched from other microservices (e.g., UserData).
+- **Local Fields**: Inputs from the Workflow microservice, possibly with pre-filled values.
+
+This endpoint consolidates the data needed by the client to render forms or generate documents based on a template.
+
+## Request Parameters
+
+- **Path Parameters**:
+  - `id` (string, UUID): The ID of the template.
+
+- **Query Parameters**:
+  - `contextId` (string, optional): Identifier used to fetch data from Workflow and system microservices (e.g., user ID, workflow instance ID).
+
+## Headers
+
+- `Authorization: Bearer <token>`
+
+## Responses
+
+- **200 OK**
+
+  ```json
+  {
+    "templateId": "string",
+    "templateName": "string",
+    "systemFields": {
+      "fieldName1": "value1",
+      "fieldName2": "value2"
+    },
+    "localFields": [
+      {
+        "name": "string",
+        "type": "string | number | date | boolean",
+        "validation": {
+          "required": true,
+          "pattern": "string",
+          "minLength": 0,
+          "maxLength": 255
+        },
+        "value": "string | number | boolean | null"
+      }
+      // Additional local fields...
+    ],
+    "metadata": {
+      "createdBy": "string",
+      "createdAt": "timestamp",
+      "version": "string"
+    }
+  }
+  ```
+
+- **400 Bad Request**: Invalid parameters or missing required information.
+- **401 Unauthorized**: Authentication failed.
+- **404 Not Found**: Template not found.
+
+## Example Request
+
+```http
+GET /templates/123e4567-e89b-12d3-a456-426614174000/fields?contextId=user-123 HTTP/1.1
+Host: your-domain.com
+Authorization: Bearer <token>
+```
+
+## Example Response
+
+```json
+{
+  "templateId": "123e4567-e89b-12d3-a456-426614174000",
+  "templateName": "Absence Certificate",
+  "systemFields": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "employeeId": "E12345"
+  },
+  "localFields": [
+    {
+      "name": "reason",
+      "type": "string",
+      "validation": {
+        "required": true,
+        "maxLength": 255
+      },
+      "value": "Medical Appointment"
+    },
+    {
+      "name": "startDate",
+      "type": "date",
+      "validation": {
+        "required": true
+      },
+      "value": null
+    }
+  ],
+  "metadata": {
+    "createdBy": "admin-uuid",
+    "createdAt": "2023-10-01T12:00:00Z",
+    "version": "v1.0"
+  }
+}
+```
+
+## How It Works
+
+1. **System Fields Retrieval**: Fetches data from relevant microservices using `sourceDetails` in the template's dynamic fields and the provided `contextId`.
+
+2. **Local Fields Retrieval**: Obtains local field definitions and any existing input values from the Workflow microservice using the `contextId`.
+
+3. **Data Aggregation**: Combines system fields and local fields into a unified response for the client.
+
+
+
+---
+
